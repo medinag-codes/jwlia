@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+header{
+    font-size: 1.6rem;
+}
+
+nav{
+    height: 50px;
+    background: white;
+    display: flex;
+    padding: 10px 2%;
+}
+
+ul{
+    display: flex;
+    flex: 7;
+    gap: 2%
+}
+
+li{
+    height: 30px;
+    list-style: none;
+    flex: 1;
+}
+
+button{
+    flex: 1;
+    background: rgb(52,57,65);
+    color: white;
+}
+
+header section{ 
+    background: rgb(241, 243, 245);
+    height: 400px;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+}
+
+header div{
+    height:400px;
+    flex: 1.25;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.woman{
+    height: 400px;
+    flex: 0.75;
+    padding: 2% 2% 0 2%;
+}
+.logo{
+    width: 35%;;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+header p{
+    font-size: 1.7rem;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    gap: 3%;
+}
+input{
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.top{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 40px 15%;
+}
+
+.top h2{
+    font-size: 3rem;
+    text-align: center;
+}
+ 
+.top div{
+    display: flex;
+    gap: 2%;
+    margin-top: 50px;
+}
+
+.top section{
+    flex: 1;
+}
+
+.top span{
+    font-weight: bold;
+    border-top: 3px solid pink;
+    padding-top: 20px;
+}
+
+.gray{
+    margin-top: 50px;
+    color: gray;
+    width: 80%;
+    text-align: center;
+    font-style: italic;
+    align-self: center;
+}
+.middle{
+    height: 700px;
+    background: rgb(241, 243, 245);
+    display: flex;
+    padding: 20px 40px;
+    border: 1px solid black;
+}
+
+.middle div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle img{
+    width: 50%;
+    padding-top: 10%;;
+}
+
+.bottom{
+    height: 700px;
+}
+
+.bottom h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 90%;
+    margin: 20px 5%;
+}
+
+.one div{
+    flex: 2;
+}
+
+.one img{
+    flex: 1;
+    height: 300px;
+    padding:0 50px;
+}
+
+.half{
+    display: flex;
+}
+
+.half section{
+    flex: 1;
+    margin: 0 40px;
+}
+h3{
+    margin: 20px 0;
+}
+
+.form{
+    background: rgb(186, 197, 207);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.form form{
+    flex: 1;
+    width: 50%;
+}
+
+.form h3{
+    flex: 1;
+}
+
+.submit{
+    background:  rgb(143,154, 160);
+    color: white;
+}
+footer{
+    background: rgb(143,154, 160);
+    color: white;
+    height: 300px;
+    padding: 20px 5%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div{
+    width: 100%;
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    border-top: 2px solid white;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.left{
+    display: flex;
+    height: 200px;
+    flex: 1.25;
+}
+
+.left ul{
+    display: flex;
+    width: 33.3333%;
+    flex-direction: column;
+}
+
+.right{
+    flex-direction: row;
+    flex: 0.75;
+}
+
+.right li{
+    margin: 20px;
+}
+
+.socials{
+    text-align: right;
+}
+
+.abridged{
+    display: none;
+}
+/* Media Queries */
+/* tablet */
+@media screen and (max-width: 1175px){
+    main{
+        line-height: 1.25;
+    }
+}
+@media screen and (max-width: 885px){
+    .half{
+        display: none;
+    }
+    footer li{
+        font-size: 1.2rem;
+    }
+    .bottom{
+        padding-top: 20%;
+    }
+    .bottom h2{
+        text-align: left;
+        margin-left: 20%;
+    }
+}
+/* mobile */
+@media screen and (max-width: 850px) and (min-width: 700px){
+    .original{
+        display: none;
+    }
+    .abridged{
+        display: block;
+    }
+
+    form{
+        display: none;
+    }
+}
